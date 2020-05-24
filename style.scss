@@ -1,123 +1,238 @@
+@media screen and (max-width: 480px) {
+	* {
+	display: flex;
+	flex-flow: column;
+	max-width: 100%;
+	}
+
+}
+
+
 body {
 	margin: 0;
 }
+
+.whole {
+	width: 100%;
+}
+
 .Banner {
 	background-color: #5b181a;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding:1em;
-
+	padding: 1em;
 }
 
 .List {
 	list-style-type: none;
-	padding-bottom: 3em;
-	margin-top: 0;
 	background-color: black;
+	margin-top: 0;
+
 	li {
-		float: left;
-	}
-	a {
-		display: block;
+		display: inline-block;
 		padding: 1em;
+	}
+
+	a {
 		color: white;
 		font-family: Arial, Helvetica, sans-serif;
+		text-decoration: none;
 	}
 }
 
-.Date {
-	text-align: right;
-}
 .Burrito {
 	display: flex;
-	width:95%;
-	margin: 0 auto;
+	width: 95%;
+	margin: auto;
+	flex-flow: row;
+	
+
+	.Pics {
+		width: 80em;
+		margin-right: 10px;
+
+		.Upperbox1 {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-between;
+			width: 100%;
+
+		}
+
+		.Lowerbox1 {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-between;
+			width: 100%;
+			
+		}
+
+		.newspic {
+			width: 25em;			
+			height: 20em;
+		}
+		.contain {
+				position: relative;
+			}
+
+		.Text{
+			position: absolute;
+			bottom:0.1em;
+			height: 25%;
+			padding: 4px;
+			color: white;
+			background-color: black;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 1.5em;
+		}
+
+	}
+
+	.Pics2 {
+		width: 80em;
+		margin-right: 10px;
+
+		.Upperbox2 {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			margin-bottom: 3em;
+
+		}
+
+		.Lowerbox2 {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+		}
+
+		.bigpic {
+			width: 38em;
+			height: 30em;
+			
+		}
+
+		.contain {
+				position: relative;
+			}
+
+			.Text{
+				position: absolute;
+				bottom:0.1em;
+				height: 25%;
+				width: 600px;
+				padding: 4px;
+				color: white;
+				background-color: black;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 2em;
+		}
+
+	}
 }
 
-.First {
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: gray;
-	width: 95%;
+.Uno {
+	width:95%;
 	margin: 0 auto;
-	font-size: 1.5em;
-	text-align: left;
+	display: flex;
+	justify-content: flex-end;
+
+	.Date {
+		display: flex;
+		
+		p {
+			margin: 0;
+		}	
+	}
+}
+
+.Head1{
+	width:95%;
+	margin: 0 auto;
+	display: flex;
+	.First {
+		background-color: #dddddd;
+		font-family: Arial, Helvetica, sans-serif;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		font-size: 1.5em;
+		width: 100%;
+
+
+		p {
+			margin:0;
+		}
+
+	}
 }
 
 .Second {
+	background-color: #dddddd;
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: gray;
-	width: 100%;
-	margin: 0 auto;
 	font-size: 1.5em;
-	text-align: left;
-	display: flex;
-}
+	
 
-.Pics {
-	display: flex;
-	flex-flow: column;
-	width: 100%;
-	.Upperbox1 {
-		display: flex;
-		justify-content: space-between;
-  		flex-direction: row;
-  		width: 100%;
-  		margin-right: 15px;
+	p {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		
 	}
-	.Lowerbox1 {
-		display: flex;
-		justify-content: space-between;
-  		flex-direction: row;
-  		width: 100%;
-  		margin-right: 15px;
-  		margin-top: 5px;
-	}
-	.newspic {
-		width: 20em;
-	}
-	.bigpic {
-		display: flex;
-		width: 10em;
-		overflow: hidden;
-  		
-}
-}
 
-.Upperbox2 {
-	display: flex;
-	justify-content: space-between;
-  	flex-direction: row;
-  	width: 100%;
-
-}
-.Lowerbox2 {
-	display: flex;
-	justify-content: space-between;
-  	flex-direction: row;
-  	width: 100%;
-  	margin-right: 15px;
-  	margin-top: 5px;
 }
 
 .sidebanner {
-	height: 100%;
-	margin-left: 10px;
+	
+	#firstban {
+		height: 100%;
+		width: 150%;
+	}
+
+	#lastban {
+		height: 100%;
+		width: 150%;
+	}
+
 }
 
 .midbanner {
 	display: flex;
 	justify-content: center;
-	width: 100%;
+
+	#secondban {
+		width: 90%;
+		height: 50%;
+		margin: 10px;
+	}
+}
+
+.Wrap {
+	width:90%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+
+	.midbanner {
+		width: 100%;
+		height: 100%;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+		#secondban {
+			width: 100%;
+			display: flex;
+		}
 }
 
 footer {
-  margin-top: 60px;
-  background-color: #191919;
-  width: 100%;
-  margin-bottom: 0;
-  padding-bottom: 10px;
-  }
+	margin-top: 60px;
+	background-color: #191919;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
 
 .Footlist {
 	list-style-type: none;
@@ -137,8 +252,31 @@ footer {
 }
 
 #para {
+	text-align: center;
+  	color:white;
+  	padding-bottom: 100px; 
+}
+
+.Botlogo {
+	float: right;
+}
+
+/*#para {
   display: flex;
   color:white;
   justify-content: center;
-  padding-bottom: 5px; 
+  align-items: flex-end;
+  padding-bottom: 100px; 
 }
+
+footer {
+
+	margin-top: 60px;
+	background-color: #191919;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+
+*/

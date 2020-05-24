@@ -1,102 +1,158 @@
+@media screen and (max-width: 480px) {
+  * {
+    display: flex;
+    flex-flow: column;
+    max-width: 100%; } }
 body {
   margin: 0; }
+
+.whole {
+  width: 100%; }
 
 .Banner {
   background-color: #5b181a;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1em; }
 
 .List {
   list-style-type: none;
-  padding-bottom: 3em;
-  margin-top: 0;
-  background-color: black; }
+  background-color: black;
+  margin-top: 0; }
   .List li {
-    float: left; }
+    display: inline-block;
+    padding: 1em; }
   .List a {
-    display: block;
-    padding: 1em;
     color: white;
-    font-family: Arial, Helvetica, sans-serif; }
-
-.Date {
-  text-align: right; }
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none; }
 
 .Burrito {
   display: flex;
   width: 95%;
-  margin: 0 auto; }
+  margin: auto;
+  flex-flow: row; }
+  .Burrito .Pics {
+    width: 80em;
+    margin-right: 10px; }
+    .Burrito .Pics .Upperbox1 {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      width: 100%; }
+    .Burrito .Pics .Lowerbox1 {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      width: 100%; }
+    .Burrito .Pics .newspic {
+      width: 25em;
+      height: 20em; }
+    .Burrito .Pics .contain {
+      position: relative; }
+    .Burrito .Pics .Text {
+      position: absolute;
+      bottom: 0.1em;
+      height: 25%;
+      padding: 4px;
+      color: white;
+      background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.5em; }
+  .Burrito .Pics2 {
+    width: 80em;
+    margin-right: 10px; }
+    .Burrito .Pics2 .Upperbox2 {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 3em; }
+    .Burrito .Pics2 .Lowerbox2 {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+    .Burrito .Pics2 .bigpic {
+      width: 38em;
+      height: 30em; }
+    .Burrito .Pics2 .contain {
+      position: relative; }
+    .Burrito .Pics2 .Text {
+      position: absolute;
+      bottom: 0.1em;
+      height: 25%;
+      width: 600px;
+      padding: 4px;
+      color: white;
+      background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2em; }
 
-.First {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: gray;
+.Uno {
   width: 95%;
   margin: 0 auto;
-  font-size: 1.5em;
-  text-align: left; }
+  display: flex;
+  justify-content: flex-end; }
+  .Uno .Date {
+    display: flex; }
+    .Uno .Date p {
+      margin: 0; }
+
+.Head1 {
+  width: 95%;
+  margin: 0 auto;
+  display: flex; }
+  .Head1 .First {
+    background-color: #dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    width: 100%; }
+    .Head1 .First p {
+      margin: 0; }
 
 .Second {
+  background-color: #dddddd;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: gray;
-  width: 100%;
-  margin: 0 auto;
-  font-size: 1.5em;
-  text-align: left;
-  display: flex; }
+  font-size: 1.5em; }
+  .Second p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
 
-.Pics {
-  display: flex;
-  flex-flow: column;
-  width: 100%; }
-  .Pics .Upperbox1 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-    margin-right: 15px; }
-  .Pics .Lowerbox1 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-    margin-right: 15px;
-    margin-top: 5px; }
-  .Pics .newspic {
-    width: 20em; }
-  .Pics .bigpic {
-    display: flex;
-    width: 10em;
-    overflow: hidden; }
-
-.Upperbox2 {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  width: 100%; }
-
-.Lowerbox2 {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  width: 100%;
-  margin-right: 15px;
-  margin-top: 5px; }
-
-.sidebanner {
+.sidebanner #firstban {
   height: 100%;
-  margin-left: 10px; }
+  width: 150%; }
+.sidebanner #lastban {
+  height: 100%;
+  width: 150%; }
 
 .midbanner {
   display: flex;
-  justify-content: center;
-  width: 100%; }
+  justify-content: center; }
+  .midbanner #secondban {
+    width: 90%;
+    height: 50%;
+    margin: 10px; }
+
+.Wrap {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+  .Wrap .midbanner {
+    width: 100%;
+    height: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .Wrap #secondban {
+    width: 100%;
+    display: flex; }
 
 footer {
   margin-top: 60px;
   background-color: #191919;
   width: 100%;
+  height: 100%;
   margin-bottom: 0;
   padding-bottom: 10px; }
 
@@ -114,9 +170,31 @@ footer {
     font-family: Arial, Helvetica, sans-serif; }
 
 #para {
-  display: flex;
+  text-align: center;
   color: white;
+  padding-bottom: 100px; }
+
+.Botlogo {
+  float: right; }
+
+/*#para {
+  display: flex;
+  color:white;
   justify-content: center;
-  padding-bottom: 5px; }
+  align-items: flex-end;
+  padding-bottom: 100px; 
+}
+
+footer {
+
+	margin-top: 60px;
+	background-color: #191919;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+
+*/
 
 /*# sourceMappingURL=style.css.map */
